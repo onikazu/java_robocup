@@ -29,6 +29,10 @@ public class PlayerLv18 extends PlayerLv17 {
         m_iBallTime = t;
         String ball = getObjectMessage(message, "((b");
         StringTokenizer st = new StringTokenizer(ball);
+        if (m_debugLv18){
+            System.out.println("st");
+            System.out.print(st);
+        }
         double ball_dist = getParam(message, "(b)", 1);
         double ball_dir = getParam(message, "(b)", 2);
         double rad = Math.toRadians(normalizeAngle(m_dNeck[t] + ball_dir));

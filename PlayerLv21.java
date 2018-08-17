@@ -54,8 +54,8 @@ public class PlayerLv21 extends PlayerLv20 {
         while (d > kickable_area && count < 50) {
             //1カウントごとの計算をする
             speed =
-                speed * player_decay
-                    + dash_power * m_dEffort[m_iTime] * dash_power_rate;
+                    speed * player_decay
+                            + dash_power * m_dEffort[m_iTime] * dash_power_rate;
             d -= speed;
             count++;
         }
