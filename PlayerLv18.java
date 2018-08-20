@@ -33,7 +33,7 @@ public class PlayerLv18 extends PlayerLv17 {
             System.out.println("st");
             System.out.print(st);
             System.out.println("count");
-            System.out.println(st.countTokens);
+            System.out.println(st.countTokens());
         }
         double ball_dist = getParam(message, "(b)", 1);
         double ball_dir = getParam(message, "(b)", 2);
